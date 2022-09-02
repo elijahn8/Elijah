@@ -1,0 +1,24 @@
+
+{% load static %}
+<html>
+<body>
+  <style>
+  @import url("{% static 'onlinebank.css' %}");
+</style>
+
+  <form action="man",method="GET",autocomplete='on'>
+    <input type="text" name="text1" id="text1"><br>
+    <input type="text" name="text2" id="text2"><br>
+    <input type="submit" value="signin"><br>
+  </form>
+  <h3>{{names}}</h3><br>
+  <div class="div1" id="div2">
+    <center><h1>year:{{name}}</h1></center>
+  </div>
+  </body><head>
+  <script type='text/javascript' src="{% static 'js/onlinebank.js' %}" ><script>
+  document.write("elijah")
+  </script>
+</h3><br>
+
+</html>
