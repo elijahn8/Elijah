@@ -1,3 +1,4 @@
+import socket
 """
 this is the code for the tcp server in the web
 """
@@ -5,10 +6,6 @@ this is the code for the tcp server in the web
 ip="127.0.0.1"
 port=2000
 address=(ip,port)
-#including the socket module which has the tcp and the udp functions .
-
-import socket
- 
 #creating the  tcp function object
 server=socket.socket()
 server.bind(address)
