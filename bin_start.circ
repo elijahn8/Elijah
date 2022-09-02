@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+  This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+
+  <lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="Counter">
+      <a name="width" val="24"/>
+      <a name="max" val="0xffffff"/>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+  </circuit>
+  <circuit name="add">
+    <a name="circuit" val="add"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M129,98 Q133,108 137,98" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="30" x="121" y="110"/>
+      <circ-port height="8" pin="240,200" width="8" x="156" y="126"/>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="67"/>
+    </appear>
+    <wire from="(320,280)" to="(380,280)"/>
+    <wire from="(200,200)" to="(200,210)"/>
+    <wire from="(270,200)" to="(320,200)"/>
+    <wire from="(150,210)" to="(200,210)"/>
+    <wire from="(210,320)" to="(320,320)"/>
+    <wire from="(360,160)" to="(360,310)"/>
+    <wire from="(220,160)" to="(220,180)"/>
+    <wire from="(240,100)" to="(240,120)"/>
+    <wire from="(240,180)" to="(240,200)"/>
+    <wire from="(240,200)" to="(270,200)"/>
+    <wire from="(200,200)" to="(230,200)"/>
+    <wire from="(150,170)" to="(150,210)"/>
+    <wire from="(210,280)" to="(210,320)"/>
+    <wire from="(380,240)" to="(380,280)"/>
+    <wire from="(240,180)" to="(260,180)"/>
+    <wire from="(200,210)" to="(220,210)"/>
+    <wire from="(280,110)" to="(290,110)"/>
+    <wire from="(360,310)" to="(370,310)"/>
+    <wire from="(360,370)" to="(370,370)"/>
+    <wire from="(320,380)" to="(330,380)"/>
+    <wire from="(210,280)" to="(290,280)"/>
+    <wire from="(220,180)" to="(230,180)"/>
+    <wire from="(290,110)" to="(290,160)"/>
+    <wire from="(220,160)" to="(290,160)"/>
+    <wire from="(320,320)" to="(320,380)"/>
+    <wire from="(370,310)" to="(370,370)"/>
+    <wire from="(290,160)" to="(360,160)"/>
+    <wire from="(240,120)" to="(240,180)"/>
+    <wire from="(210,220)" to="(210,280)"/>
+    <comp lib="4" loc="(360,370)" name="Random"/>
+    <comp lib="4" loc="(270,180)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(240,200)" name="Pin"/>
+    <comp lib="3" loc="(280,110)" name="Subtractor"/>
+    <comp lib="0" loc="(150,170)" name="Tunnel"/>
+    <comp lib="4" loc="(320,280)" name="Register"/>
+  </circuit>
+  <circuit name="name">
+    <a name="circuit" val="name"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(220,400)" to="(220,410)"/>
+    <wire from="(240,430)" to="(240,440)"/>
+    <wire from="(260,310)" to="(310,310)"/>
+    <wire from="(210,380)" to="(260,380)"/>
+    <wire from="(310,310)" to="(310,320)"/>
+    <wire from="(310,290)" to="(310,310)"/>
+    <wire from="(260,360)" to="(260,380)"/>
+    <wire from="(330,270)" to="(330,290)"/>
+    <wire from="(410,250)" to="(410,270)"/>
+    <wire from="(280,380)" to="(390,380)"/>
+    <wire from="(220,420)" to="(220,440)"/>
+    <wire from="(410,220)" to="(410,250)"/>
+    <wire from="(270,380)" to="(270,410)"/>
+    <wire from="(210,380)" to="(210,410)"/>
+    <wire from="(240,360)" to="(240,390)"/>
+    <wire from="(410,250)" to="(450,250)"/>
+    <wire from="(450,250)" to="(450,350)"/>
+    <wire from="(260,480)" to="(290,480)"/>
+    <wire from="(310,290)" to="(330,290)"/>
+    <wire from="(260,440)" to="(280,440)"/>
+    <wire from="(260,440)" to="(260,480)"/>
+    <wire from="(350,180)" to="(350,220)"/>
+    <wire from="(400,180)" to="(400,220)"/>
+    <wire from="(240,360)" to="(260,360)"/>
+    <wire from="(220,440)" to="(240,440)"/>
+    <wire from="(240,440)" to="(260,440)"/>
+    <wire from="(400,220)" to="(410,220)"/>
+    <wire from="(260,410)" to="(270,410)"/>
+    <wire from="(270,380)" to="(280,380)"/>
+    <wire from="(340,220)" to="(350,220)"/>
+    <wire from="(390,180)" to="(400,180)"/>
+    <wire from="(310,320)" to="(390,320)"/>
+    <wire from="(330,270)" to="(410,270)"/>
+    <wire from="(210,410)" to="(220,410)"/>
+    <wire from="(260,310)" to="(260,360)"/>
+    <wire from="(280,380)" to="(280,440)"/>
+    <wire from="(390,320)" to="(390,380)"/>
+    <comp lib="1" loc="(340,220)" name="OR Gate"/>
+    <comp lib="0" loc="(450,350)" name="Clock"/>
+    <comp lib="3" loc="(260,410)" name="Adder"/>
+    <comp lib="0" loc="(390,180)" name="Transistor"/>
+    <comp lib="0" loc="(310,290)" name="Pin"/>
+    <comp lib="0" loc="(390,320)" name="Tunnel"/>
+  </circuit>
+</project>
